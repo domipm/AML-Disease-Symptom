@@ -2,5 +2,4 @@
 Code developed for Applied Machine Learning @ SDU Project: "Disease Symptom Prediction"
 
 
-Does this work ? (Louis)
-
+Louis comment
