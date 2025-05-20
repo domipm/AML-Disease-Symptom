@@ -1,0 +1,211 @@
+\listfiles
+\documentclass[3p]{elsarticle}
+
+\usepackage{lineno,hyperref}
+\modulolinenumbers[5]
+
+\journal{Applied Machine Learning Course}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% Bibliography styles
+%%%%%%%%%%%%%%%%%%%%%%%
+%% To change the style, put a % in front of the second line of the current style and
+%% remove the % from the second line of the style you would like to use.
+%%%%%%%%%%%%%%%%%%%%%%%
+
+% Numbered
+% \bibliographystyle{model1-num-names}
+
+%% Numbered without titles
+% \bibliographystyle{model1a-num-names}
+
+%% Harvard
+% \bibliographystyle{model2-names}\biboptions{authoryear}
+
+%% Vancouver numbered
+% \usepackage{numcompress}\bibliographystyle{model3-num-names}
+
+%% Vancouver name/year
+% \usepackage{numcompress}\bibliographystyle{model4-names}\biboptions{authoryear}
+
+%% APA style
+% \bibliographystyle{model5-names}\biboptions{authoryear}
+
+%% AMA style
+% \usepackage{numcompress}\bibliographystyle{model6-num-names}
+
+%% `Elsevier LaTeX' style, distributed in TeX Live 2019
+\bibliographystyle{elsarticle-num}
+% \usepackage{numcompress}\bibliographystyle{elsarticle-num-names}
+% \bibliographystyle{elsarticle-harv}\biboptions{authoryear}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DO NOT EDIT ANYTHING ABOVE THIS LINE
+% EXCEPT IF YOU LIKE TO USE ADDITIONAL PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{comment}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%%%%%%%%% TITLE
+%\title{Applied Machine Learning: Disease Symptom Prediction\\}
+\title{Applied Machine Learning \\ \huge{\textbf{Disease Symptom Prediction}}}
+
+%%%%%%%%% AUTHORS
+\author{Louis Simon Spatscheck, Aikaterini Vasilopoulou, \\ 
+Léandre Pablo Delphin Göblyös, Dominik Pastuszka Malek}
+\let\thefootnote\relax\footnotetext{\textit{Email adresses:} author1@student.sdu.dk, author2@student.sdu.dk, author3@student.sdu.dk, dpast24@student.sdu.dk}
+
+\begin{comment}
+\author{Louis Simon Spatscheck}
+\ead{author1@student.sdu.dk}
+\author{Aikaterini Vasilopoulou}
+\ead{author2@student.sdu.dk}
+\author{Léandre Pablo Delphin Göblyös}
+\ead{author3@student.sdu.dk}
+\author{Dominik Pastuszka Malek}
+\ead{dpast24@student.sdu.dk}
+\end{comment}
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+The abstract for your project goes here. The length of the abstract should be between 200\-250 words. Tips for writing a good abstract can be found at  \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3136027/}. \\
+
+%\noindent Link to dataset: 
+%\begin{center}
+%    \href{https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset}{Disease Symptom Prevention (Kaggle)}
+%\end{center}
+
+\noindent Link to \textit{GitHub} repository containing the dataset and all code developed for this project:
+\begin{center}
+    \href{https://github.com/domipm/AML-Disease-Symptom}{Applied Machine Learning - Disease Symptom Prevention (GitHub)}
+\end{center}
+
+\end{abstract}
+
+
+\end{frontmatter}
+
+
+
+
+% MAIN ARTICLE GOES BELOW
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%% BODY TEXT
+\section{Introduction}
+
+This template is based on the Elsevier \LaTeX\ template\footnote{\url{https://www.overleaf.com/latex/templates/elsevier-article-template-with-different-bibliography-styles/npwqmwvhvvrk}}. The information in this template is very minimal, and this file should serve you as a framework for writing your report. You may prefer to use a more collaboration-friendly tool while drafting the report with your class mates before you prepare the final report for submission. Remember that you should \textbf{submit both the report (PDF and \.tex files) and  the Python codes} you used for this project via \textbf{itslearning}. Also, \textbf{only one member per team} needs to submit the project material.
+
+
+This is an example of a mathematical equation:
+\begin{equation}
+\[f(\mathbf{x}; \mathbf{w}) = \sum_{i=1}^{n} w_{ix}_i.\]
+\end{equation}
+
+This is a mathematical expression, $h(\mathbf{x}) = \hat{y}$ formatted in text. 
+
+The project report should be \textbf{maximum 20 pages long (not counting references)} and should contain the sections that are already provided in this paper. Please check out the text in these sections for further information.
+
+
+\subsection{Subsection}
+
+You can use paragraphs or subsections to further structure your main sections. This is an example of a subsection.
+
+\paragraph{This is a paragraph title} This is an example of a paragraph.
+\begin{itemize}
+\item Item number one.
+\item Item number two.
+\end{itemize}
+
+
+\section{Related Work}
+
+Related work should be discussed here. This is an example of a citation. To format the citations properly, put the corresponding references into the \textbf{mybibfile.bib} file. You can obtain BibTeX-formatted references for the \"bib\" file from Google Scholar  (\url{https://scholar.google.com}), for example, by clicking on the double-quote character under a citation and then selecting as shown in Figure
+
+\begin{figure}[t]
+\begin{center}
+   \includegraphics[width=0.8\linewidth]{figures/google-scholar.pdf}
+\end{center}
+   \caption{Example illustrating how to get BibTeX references from
+   Google Scholar.}\label{fig:google-scholar}
+\end{figure}
+
+
+Table~\ref{tab:some-table} shows an example for formatting a table.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{lc}
+
+Method & Accuracy \\
+\hline\hline
+Method 1 & $70 \pm 3$ \% \\
+Method 2 & $76 \pm 3$ \% \\
+
+\end{tabular}
+\end{center}\label{tab:some-table}
+\caption{This is an example of a table.}
+\end{table}
+
+\section{Proposed Method}
+
+Describe the method you are proposing, developing, or using. I.e., details of the algorithms may be included here. 
+
+\section{Experiments}
+
+Describe the experiments you performed. You may want to create separate subsections to further structure this section.
+
+\subsection{Dataset}
+
+Briefly describe your dataset in a separate subsection.
+
+
+\subsection{Software}
+
+Briefly list (and cite) software software you used.
+
+\subsection{Hardware}
+
+If relevant, list hardware resources you used.
+
+
+\section{Results and Discussion}
+
+Describe the results you obtained from the experiments and interpret them. Optionally, you could split Results and Discussion  into two separate sections.
+
+\section{Conclusions}
+
+Describe your conclusions here. If there are any future directions, you can describe them here, or you can create a new section for future directions.
+
+\section{Acknowledgements}
+
+List acknowledgements if any. For example, if someone provided you a dataset, or you used someone else's resources, this is a good place to acknowledge the help or support you received.
+
+\section{Contributions}
+
+Describe the contributions of each team member who worked on this project.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DO NOT EDIT ANYTHING ABOVE THIS LINE
+% EXCEPT IF YOU LIKE TO USE ADDITIONAL PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliography{mybibfile}
+
+\end{document}
