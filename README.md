@@ -5,4 +5,4 @@ The main objective of this project is to research the possible application of di
 
 The dataset considered for this project is the publicly available Disease Symptom Prediction dataset uploaded by Pranay Patil on Kaggle, publicly available on https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset/data.
 
-![Alt text](https://github.com/domipm/AML-Disease-Symptom/blob/d1533f0fae2d2570d0ba387aceeec21c0ec6ec71/Plots/Classifier_Fulldata/added_accuracy.pdf)
+![Alt text](Plots/Classifier_Fulldata/added_accuracy.pdf)
